@@ -2,6 +2,7 @@ import VueRouter from 'vue-router';
 import HeaderComponent from "./components/HeaderComponent";
 import TaskListComponent from "./components/TaskListComponent";
 import TaskShowComponent from "./components/TaskShowComponent";
+import TaskCreateComponent from "./components/TaskCreateComponent";
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -27,6 +28,11 @@ window.Vue = require('vue').default;
              name: 'task.show',
              component: TaskShowComponent,
              props: true
+         },
+         {
+             path: '/tasks/create',
+             name: 'task.create',
+             component: TaskCreateComponent
          },
      ]
  });
